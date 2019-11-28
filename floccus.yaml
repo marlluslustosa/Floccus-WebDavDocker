@@ -1,0 +1,28 @@
+host: 0.0.0.0
+port: 8081
+
+provider_mapping:
+    "/": "./bookmarks/"
+
+middleware_stack:
+    - wsgidav.debug_filter.WsgiDavDebugFilter
+    - wsgidav.error_printer.ErrorPrinter
+    - wsgidav.http_authenticator.HTTPAuthenticator
+    - wsgidav.request_resolver.RequestResolver
+
+
+http_authenticator:
+    domain_controller: null  # Same as wsgidav.dc.simple_dc.SimpleDomainController
+    accept_basic: true  # Pass false to prevent sending clear text passwords
+    accept_digest: true
+    default_to_digest: true
+
+simple_dc:
+    user_mapping:
+        "/":
+            "usertochange":
+                password: "passtochange"
+                roles: ["editor"]
+
+lock_manager: true
+
