@@ -21,6 +21,7 @@ $ sudo docker build -t lofloccus:latest .
 $ sudo docker run -itd --name lofloccus -e USER="user" -e PASS="pass" -v $PWD/bookmarks/:/var/lofloccus/bookmarks/ -p 8083:8081 --restart=always lofloccus:latest
 ```
 
+
 # Install with 'one command'
 ## 1. Download and build and run image docker (Docker Hub Repository)
 ```
