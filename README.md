@@ -31,7 +31,7 @@ sudo docker run -itd --name floccuswebdav -e USER="user" -e PASS="pass" -v "$PWD
 
 # Comments
 
- * Edit 'user' and 'pass' (LoFloccus navigator plugin credentials).
+ * Edit 'user' and 'pass' (Floccus navigator plugin credentials).
 
  * "$PWD"/bookmarks = is the folder where you want to save the bookmark file. It can be a folder inside a dropbox repository, google drive, syncthing, rsync, etc.
 
