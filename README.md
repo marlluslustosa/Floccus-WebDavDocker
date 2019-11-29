@@ -1,7 +1,15 @@
 # Floccus-WebDavDocker
 Local WebDAV server to Floccus plugin browse. Dockerized version for GNU/Linux (with autentication).
 
-Inspired by [TCB13/LoFloccus](https://github.com/TCB13/LoFloccus) ('Sync Floccus' browser bookmarks to a local folder / any cloud). 
+Inspired by [TCB13/LoFloccus](https://github.com/TCB13/LoFloccus) ('Sync Floccus' browser bookmarks to a local folder / any cloud).
+
+# Features
+
+- Accepts WebDAV connections from localhost;
+- Restrict Floccus access to a single directory;
+- Set username and password for Floccus credentials;
+- Only works with .XBEL files;
+- Share the folder on any public or private cloud service (dropbox, drive, rsync, synthing, seafile, etc.);
 
 # Install from source
 
