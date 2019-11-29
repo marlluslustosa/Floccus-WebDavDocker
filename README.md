@@ -1,31 +1,31 @@
 # LoFloccus-Docker
-LoFloccus (Local WebDAV server). Dockerized version for GNU/Linux (with autentication).
+Local WebDAV server to Floccus plugin browse. Dockerized version for GNU/Linux (with autentication).
 
-GNU/Linux client of [TCB13/LoFloccus](https://github.com/TCB13/LoFloccus) ('Sync Floccus' browser bookmarks to a local folder / any cloud). 
+Inspired by [TCB13/LoFloccus](https://github.com/TCB13/LoFloccus) ('Sync Floccus' browser bookmarks to a local folder / any cloud). 
 
 # Install from source
 
 ## 1. Download with git
 ```
-$ git clone https://github.com/marlluslustosa/LoFloccus-Docker/
-$ cd LoFloccus-Docker
+$ git clone https://github.com/marlluslustosa/Floccus-WebDavDocker
+$ cd Floccus-WebDavDocker
 ```
 
 ## 2. Build with docker
 ```
-$ sudo docker build -t lofloccus:latest .
+$ sudo docker build -t floccuswebdav:latest .
 ```
 
 ## 3. Run
 ```
-$ sudo docker run -itd --name lofloccus -e USER="user" -e PASS="pass" -v $PWD/bookmarks/:/var/lofloccus/bookmarks/ -p 8083:8081 --restart=always lofloccus:latest
+$ sudo docker run -itd --name floccuswebdav -e USER="user" -e PASS="pass" -v $PWD/bookmarks/:/var/floccuswebdav/bookmarks/ -p 8083:8081 --restart=always floccuswebdav:latest
 ```
 
 
 # Install with 'one command'
 ## 1. Download and build and run image docker (Docker Hub Repository)
 ```
-sudo docker run -itd --name lofloccus -e USER="user" -e PASS="pass" -v "$PWD"/bookmarks/:/var/lofloccus/bookmarks/ -p 8083:8081 --restart=always marlluslustosa/lofloccus
+sudo docker run -itd --name floccuswebdav -e USER="user" -e PASS="pass" -v "$PWD"/bookmarks/:/var/floccuswebdav/bookmarks/ -p 8083:8081 --restart=always marlluslustosa/floccuswebdav
 ```
 
 
