@@ -46,4 +46,4 @@ sudo docker run -itd --name lofloccus -e USER="user" -e PASS="pass" -v "$PWD"/bo
 
 # License
 
-* GNU GENERAL PUBLIC LICENSE (GPL Version 3)
+* GNU GENERAL PUBLIC LICENSE (GPL Version 3) [see more](LICENSE)
